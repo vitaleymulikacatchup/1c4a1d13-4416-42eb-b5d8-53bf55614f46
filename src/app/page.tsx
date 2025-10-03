@@ -53,7 +53,7 @@ export default function Home() {
         <PatternTokenomics
           title="Tokenomics Overview"
           description="Here's how our token structure works"
-          tokenData={[{ value: "10M", description: "Total Supply"}, { value: "5M", description: "Circulating Supply"}]}
+          tokenData={[{ value: "10M", description: "Total Supply" }, { value: "5M", description: "Circulating Supply" }]}
         />
       </div>
       <div id="footer" data-section="footer">
