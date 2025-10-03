@@ -19,7 +19,6 @@ export default function Home() {
       <div id="nav" data-section="nav">
         <NavbarLayoutSplitBottom
           logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32Sjpo9ZLWlVS5JxRw9EagJf0Fo/design-a-simple-high-contrast-logo-for-m-1759474650243-6a696545.jpg"
-          logoAlt="MVP Studio"
           navItems={[
             { name: "Hero", id: "hero" },
             { name: "About", id: "about" },
