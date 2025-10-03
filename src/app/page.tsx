@@ -6,6 +6,7 @@ import CtaAbout from '@/components/sections/layouts/about/CtaAbout';
 import HowToBuy3D from '@/components/sections/layouts/howtobuy/3DHTB';
 import BigNumberTokenomics from '@/components/sections/layouts/tokenomics/BigNumberTokenomics';
 import LogoFooter from '@/components/sections/layouts/footer/LogoFooter';
+import { LucideIcon } from 'lucide-react';
 
 const theme: SiteTheme = {
     styleVariant: "futuristicAndOutOfBox",
