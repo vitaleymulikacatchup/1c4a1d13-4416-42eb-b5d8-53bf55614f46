@@ -1,6 +1,6 @@
 "use client";
 import { SiteTheme, SiteThemeProvider } from '@/components/sections/ThemeProvider';
-import { NavbarLayoutSplitBottom } from '@/components/navigation/NavbarLayoutSplitBottom/NavbarLayoutSplitBottom';
+import NavbarLayoutSplitBottom from '@/components/navigation/NavbarLayoutSplitBottom/NavbarLayoutSplitBottom';
 import VoidHero from '@/components/sections/layouts/hero/VoidHero';
 import SocialsAbout from '@/components/sections/layouts/about/SocialsAbout';
 import HowToBuy2D from '@/components/sections/layouts/howtobuy/2DHTB';
@@ -19,7 +19,6 @@ export default function Home() {
       <div id="nav" data-section="nav">
         <NavbarLayoutSplitBottom
           logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32Sjpo9ZLWlVS5JxRw9EagJf0Fo/design-a-simple-high-contrast-logo-for-m-1759476490616-157e53e7.jpg"
-          logoAlt="MVP Studio Logo"
           buttonText="Get Early Access"
           navItems={[
             { name: "Hero", id: "hero" },
