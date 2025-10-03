@@ -19,7 +19,6 @@ export default function Home() {
       <div id="nav" data-section="nav">
         <NavbarLayoutSplitBottom
           logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32Sjpo9ZLWlVS5JxRw9EagJf0Fo/design-a-simple-high-contrast-logo-for-m-1759469894124-ee1bcf9b.jpg"
-          logoAlt="MVP Studio Logo"
           buttonText="Get Early Access"
           navItems={[{ name: "Hero", id: "hero" }, { name: "About", id: "about" }, { name: "How to Buy", id: "how-to-buy" }, { name: "Tokenomics", id: "tokenomics" }, { name: "Footer", id: "footer" }]}
         />
@@ -59,7 +58,6 @@ export default function Home() {
       <div id="footer" data-section="footer" className="scroll-mt-24">
         <LogoFooter
           logoSrc="https://example.com/logo.png"
-          logoAlt="MVP Logo"
           columns={[
             { title: 'Products', items: [{ label: 'Product 1', onClick: () => {} }, { label: 'Product 2', onClick: () => {} }] },
             { title: 'Company', items: [{ label: 'About', onClick: () => {} }, { label: 'Contact', onClick: () => {} }] },
