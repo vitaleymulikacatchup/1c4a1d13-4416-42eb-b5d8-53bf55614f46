@@ -6,6 +6,7 @@ import SocialsAbout from '@/components/sections/layouts/about/SocialsAbout';
 import HowToBuy2D from '@/components/sections/layouts/howtobuy/2DHTB';
 import PatternTokenomics from '@/components/sections/layouts/tokenomics/PatternTokenomics';
 import GradientFooter from '@/components/sections/layouts/footer/GradientFooter';
+import { Globe } from '@/components/bento/contents/Globe';
 
 const theme: SiteTheme = {
   styleVariant: "futuristicAndOutOfBox",
@@ -55,8 +56,8 @@ export default function Home() {
           title="Tokenomics Overview"
           description="Understand our metrics and engineering protocols."
           kpiItems={[
-            { value: "1M", description: "Total Supply", icon: 'LucideIcon' },
-            { value: "200k", description: "Circulating Supply", icon: 'LucideIcon' }
+            { value: "1M", description: "Total Supply", icon: Globe },
+            { value: "200k", description: "Circulating Supply", icon: Globe }
           ]}
         />
       </div>
