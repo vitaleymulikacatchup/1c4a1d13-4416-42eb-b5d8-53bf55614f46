@@ -50,7 +50,7 @@ export default function Home() {
         <PatternTokenomics
           title="Tokenomics"
           description="Learn about our token supply and allocation."
-          tokenData={[{ value: "1,000,000", description: "Total Supply" }, { value: "3%, 12%", description: "Rewards" }]}
+          kpiItems={[{ value: "1,000,000", description: "Total Supply", icon: { LucideIcon: 'IconName1' } }, { value: "3%, 12%", description: "Rewards", icon: { LucideIcon: 'IconName2' } }]}
         />
       </div>
       <div id="footer" data-section="footer">
