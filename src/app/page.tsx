@@ -6,7 +6,6 @@ import BaseAbout from '@/components/sections/layouts/about/BaseAbout';
 import HowToBuy3D from '@/components/sections/layouts/howtobuy/3DHTB';
 import TextGridTokenomics from '@/components/sections/layouts/tokenomics/TextGridTokenomics';
 import LogoFooter from '@/components/sections/layouts/footer/LogoFooter';
-import { LucideIcon } from 'lucide-react';
 
 const theme: SiteTheme = {
   styleVariant: 'futuristicAndOutOfBox',
@@ -20,7 +19,6 @@ export default function Home() {
       <div id="nav" data-section="nav">
         <NavbarLayoutFloatingInline
           logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32Sjpo9ZLWlVS5JxRw9EagJf0Fo/design-a-simple-high-contrast-logo-for-m-1759472316802-8246334b.jpg"
-          logoAlt="Brand Logo"
           navItems={[
             { name: 'Hero', id: '#hero' },
             { name: 'About', id: '#about' },
@@ -73,7 +71,6 @@ export default function Home() {
       <div id="footer" data-section="footer">
         <LogoFooter
           logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32Sjpo9ZLWlVS5JxRw9EagJf0Fo/design-a-simple-high-contrast-logo-for-m-1759472316802-8246334b.jpg"
-          logoAlt="Footer Logo"
           columns={[
             { title: 'Links', items: [
               { label: 'Home', onClick: () => {} },

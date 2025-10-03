@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   description: "Plan a lean SaaS MVP with a crisp, conversion-focused single-page layout featuring hero, about, how-to-buy, tokenomics, and a CTA to accelerate your launch.",
   keywords: ["saas", "landing-page", "mvp", "single-page", "conversion", "cta", "tokenomics", "how-to-buy", "pricing", "about-us"],
   alternates: { canonical: "/" },
-  openGraph: { 
+  openGraph: {
     title: "MVP Studio — SaaS MVP Landing: Plan, Build, Launch Fast",
     description: "Plan a lean SaaS MVP with a crisp, conversion-focused single-page layout.",
     type: "website",
