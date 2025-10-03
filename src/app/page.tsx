@@ -24,7 +24,7 @@ export default function Home() {
             { name: "About", id: "about" },
             { name: "How to Buy", id: "how-to-buy" },
             { name: "Tokenomics", id: "tokenomics" },
-            { name: "Footer", id: "footer" },
+            { name: "Footer", id: "footer" }
           ]}
           buttonText="Get Early Access"
         />
