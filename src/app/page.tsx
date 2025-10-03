@@ -1,6 +1,6 @@
 "use client";
 import { SiteTheme, SiteThemeProvider } from '@/components/sections/ThemeProvider';
-import NavbarLayoutSplitBottom from '@/components/navigation/NavbarLayoutSplitBottom/NavbarLayoutSplitBottom';
+import { NavbarLayoutSplitBottom } from '@/components/navigation/NavbarLayoutSplitBottom/NavbarLayoutSplitBottom';
 import VoidHero from '@/components/sections/layouts/hero/VoidHero';
 import SocialsAbout from '@/components/sections/layouts/about/SocialsAbout';
 import HowToBuy2D from '@/components/sections/layouts/howtobuy/2DHTB';
@@ -10,15 +10,17 @@ import GradientFooter from '@/components/sections/layouts/footer/GradientFooter'
 const theme: SiteTheme = {
   styleVariant: "futuristicAndOutOfBox",
   colorTemplate: 1,
-  textAnimation: "slide",
-}
+  textAnimation: "slide"
+};
 
 export default function Home() {
   return (
     <SiteThemeProvider theme={theme}>
       <div id="nav" data-section="nav">
         <NavbarLayoutSplitBottom
-          logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32Sjpo9ZLWlVS5JxRw9EagJf0Fo/design-a-simple-high-contrast-logo-for-m-1759474650243-6a696545.jpg"
+          logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32Sjpo9ZLWlVS5JxRw9EagJf0Fo/design-a-simple-high-contrast-logo-for-m-1759476490616-157e53e7.jpg"
+          logoAlt="MVP Studio Logo"
+          buttonText="Get Early Access"
           navItems={[
             { name: "Hero", id: "hero" },
             { name: "About", id: "about" },
@@ -26,41 +28,61 @@ export default function Home() {
             { name: "Tokenomics", id: "tokenomics" },
             { name: "Footer", id: "footer" }
           ]}
-          buttonText="Get Early Access"
         />
       </div>
+
       <div id="hero" data-section="hero">
         <VoidHero
-          title="MVP SaaS Landing"
-          description="Maximize your launch potential with streamlined features."
-          primaryButtonText="Get Started"
+          title="Welcome to MVP Studio"
+          description="Your gateway to seamless SaaS MVP launching."
+          primaryButtonText="Launch Now"
           secondaryButtonText="Learn More"
         />
       </div>
+
       <div id="about" data-section="about">
         <SocialsAbout
           title="About MVP Studio"
-          descriptions={["We help you build and launch MVPs quickly.", "Join a community of forward-thinkers."]}
+          descriptions={["We help businesses launch quickly and efficiently.", "Tailored solutions for your unique needs.", "Join us in revolutionizing the tech landscape."]}
         />
       </div>
+
       <div id="how-to-buy" data-section="how-to-buy">
-        <HowToBuy2D variant="simple" />
+        <HowToBuy2D variant="reveal" />
       </div>
+
       <div id="tokenomics" data-section="tokenomics">
         <PatternTokenomics
-          title="Tokenomics"
-          description="Learn about our token supply and allocation."
-          kpiItems={[{ value: "1,000,000", description: "Total Supply", icon: { LucideIcon: 'IconName1' } }, { value: "3%, 12%", description: "Rewards", icon: { LucideIcon: 'IconName2' } }]}
+          title="Tokenomics Overview"
+          description="Understand our metrics and engineering protocols."
+          kpiItems={[
+            { value: "1M", description: "Total Supply", icon: 'LucideIcon' },
+            { value: "200k", description: "Circulating Supply", icon: 'LucideIcon' }
+          ]}
         />
       </div>
+
       <div id="footer" data-section="footer">
         <GradientFooter
+          logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32Sjpo9ZLWlVS5JxRw9EagJf0Fo/design-a-simple-high-contrast-logo-for-m-1759476490616-157e53e7.jpg"
+          logoWidth={100}
+          logoHeight={50}
           columns={[
-            { title: "Resources", items: [{ label: "Help", onClick: () => {} }] },
-            { title: "Company", items: [{ label: "About Us", onClick: () => {} }] },
-            { title: "Contact", items: [{ label: "Support", onClick: () => {} }] }
+            { title: "Product", items: [
+              { label: "Features", onClick: () => {} },
+              { label: "Pricing", onClick: () => {} },
+            ]},
+            { title: "Company", items: [
+              { label: "About Us", onClick: () => {} },
+              { label: "Careers", onClick: () => {} },
+            ]},
+            { title: "Support", items: [
+              { label: "Help Center", onClick: () => {} },
+              { label: "Contact", onClick: () => {} },
+            ]}
           ]}
           copyrightText="© 2023 MVP Studio"
+          onPrivacyClick={() => {}}
         />
       </div>
     </SiteThemeProvider>
