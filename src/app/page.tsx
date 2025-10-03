@@ -20,11 +20,11 @@ export default function Home() {
         <NavbarLayoutFloatingInline
           logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32Sjpo9ZLWlVS5JxRw9EagJf0Fo/design-a-simple-high-contrast-logo-for-m-1759472316802-8246334b.jpg"
           navItems={[
-            { name: 'Hero', id: '#hero' },
-            { name: 'About', id: '#about' },
-            { name: 'How to Buy', id: '#how-to-buy' },
-            { name: 'Tokenomics', id: '#tokenomics' },
-            { name: 'Footer', id: '#footer' }
+            { name: 'Hero', id: 'hero' },
+            { name: 'About', id: 'about' },
+            { name: 'How to Buy', id: 'how-to-buy' },
+            { name: 'Tokenomics', id: 'tokenomics' },
+            { name: 'Footer', id: 'footer' }
           ]}
           buttonText="Get Early Access"
         />
