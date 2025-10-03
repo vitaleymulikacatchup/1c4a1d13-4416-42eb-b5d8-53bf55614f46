@@ -1,4 +1,4 @@
-use client
+"use client";
 import { SiteTheme, SiteThemeProvider } from '@/components/sections/ThemeProvider';
 import NavbarLayoutSplitBottom from '@/components/navigation/NavbarLayoutSplitBottom/NavbarLayoutSplitBottom';
 import VoidHero from '@/components/sections/layouts/hero/VoidHero';
@@ -15,9 +15,9 @@ const theme: SiteTheme = {
 
 export default function Home() {
   return (
-    <SiteThemeProvider theme={theme}> 
+    <SiteThemeProvider theme={theme}>
       <div id="nav" data-section="nav">
-        <NavbarLayoutSplitBottom 
+        <NavbarLayoutSplitBottom
           logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32Sjpo9ZLWlVS5JxRw9EagJf0Fo/design-a-simple-high-contrast-logo-for-m-1759477517757-a0709b24.jpg"
           logoWidth={50}
           logoHeight={50}
@@ -31,7 +31,7 @@ export default function Home() {
         />
       </div>
       <div id="hero" data-section="hero">
-        <VoidHero 
+        <VoidHero
           title="Welcome to MVP Studio"
           description="Launch your SaaS MVP with speed and agility."
           primaryButtonText="Get Started"
@@ -39,18 +39,18 @@ export default function Home() {
         />
       </div>
       <div id="about" data-section="about">
-        <SocialsAbout 
+        <SocialsAbout
           title="About MVP Studio"
           descriptions={["We help you build and launch MVPs quickly.", "Our team is dedicated to your success."]}
         />
       </div>
       <div id="how-to-buy" data-section="how-to-buy">
-        <HowToBuy2D 
+        <HowToBuy2D
           variant="simple"
         />
       </div>
       <div id="tokenomics" data-section="tokenomics">
-        <PatternTokenomics 
+        <PatternTokenomics
           title="Tokenomics Overview"
           description="Here's how our token structure works"
           tokenData={[{ value: "10M", description: "Total Supply"}, { value: "5M", description: "Circulating Supply"}]}
